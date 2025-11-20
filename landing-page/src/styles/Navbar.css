@@ -1,0 +1,162 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: #fbbf24;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e3a8a;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar.scrolled .logo-text {
+  color: #1e3a8a;
+}
+
+.desktop-menu {
+  display: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.desktop-menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar.scrolled .desktop-menu a {
+  color: #374151;
+}
+
+.desktop-menu a:hover {
+  color: #60a5fa;
+}
+
+.btn-portal {
+  background: #fbbf24;
+  color: #1e3a8a;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-portal:hover {
+  background: #f59e0b;
+}
+
+.btn-layanan {
+  background: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-layanan:hover {
+  background: #2563eb;
+}
+
+.mobile-menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar.scrolled .menu-icon {
+  color: #1f2937;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu a {
+  color: #374151;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logo-text-link:hover {
+  color:#1e3a8a;
+}
+
+.mobile-menu button {
+  opacity: 0.9;
+}
+
+.logo-text-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-text-link:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .desktop-menu {
+    display: flex;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+  }
+}

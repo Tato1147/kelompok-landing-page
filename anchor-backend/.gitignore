@@ -1,0 +1,11 @@
+# .gitignore
+# Dependencies and temporary files
+node_modules/
+
+# Environment variables (SECURITY RISK if committed!)
+.env
+
+# Logs and build artifacts
+*.log
+dist/
+build/

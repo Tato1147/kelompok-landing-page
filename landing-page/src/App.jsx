@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Reviews from './components/Reviews';
+import About from './components/About';
 import { sectionsData } from './data/sectionsData';
 import './styles/App.css';
 
@@ -40,6 +41,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   )

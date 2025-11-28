@@ -25,7 +25,7 @@ function Navbar() {
           <div className="desktop-menu">
             <Link to="/">Beranda</Link>
             <a href="#layanan">Layanan</a>
-            <a href="#tentang">Tentang</a>
+            <Link to="/about">Tentang</Link>
             <Link to="/reviews">Ulasan</Link>
             <Link to="/login">
               <button className="btn-login">Log In</button>
@@ -50,7 +50,7 @@ function Navbar() {
         <div className="mobile-menu">
           <Link to="/">Beranda</Link>
           <a href="#layanan">Layanan</a>
-          <a href="#tentang">Tentang</a>
+          <Link to="/about">Tentang</Link>
           <Link to="/reviews">Ulasan</Link>
           <Link to="/login">
             <button className="btn-login">Log In</button>

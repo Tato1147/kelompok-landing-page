@@ -1,0 +1,272 @@
+.services-page {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f9fafb;
+  position: relative;
+}
+
+.services-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: white;
+  padding: 8rem 2rem 4rem 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.services-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.services-hero p {
+  font-size: 1.25rem;
+  color: #bfdbfe;
+}
+
+/* Services Content */
+.services-content {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* Service Card */
+.service-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-header {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.service-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.service-body {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.service-section {
+  margin-bottom: 1.5rem;
+}
+
+.service-section h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.service-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.benefits-list li::before {
+  content: "✓";
+  color: #10b981;
+}
+
+.service-button {
+  width: 100%;
+  padding: 0.875rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: auto;
+}
+
+.service-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Call to Action Section */
+.services-cta {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: white;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.125rem;
+  color: #bfdbfe;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.cta-button.primary {
+  background: white;
+  color: #1e3a8a;
+}
+
+.cta-button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background: white;
+  color: #1e3a8a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 6rem 1.5rem 3rem 1.5rem;
+  }
+
+  .services-hero h1 {
+    font-size: 2rem;
+  }
+
+  .services-hero p {
+    font-size: 1rem;
+  }
+
+  .services-content {
+    padding: 2rem 1rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-header {
+    padding: 1.5rem;
+  }
+
+  .service-emoji {
+    font-size: 3rem;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+  }
+
+  .service-body {
+    padding: 1.5rem;
+  }
+
+  .services-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}

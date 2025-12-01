@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Reviews from './components/Reviews';
 import About from './components/About';
+import Services from './components/Services';
 import { sectionsData } from './data/sectionsData';
 import './styles/App.css';
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </Router>
   );

@@ -24,7 +24,7 @@ function Navbar() {
           
           <div className="desktop-menu">
             <Link to="/">Beranda</Link>
-            <a href="#layanan">Layanan</a>
+            <Link to="/services">Layanan</Link>
             <Link to="/about">Tentang</Link>
             <Link to="/reviews">Ulasan</Link>
             <Link to="/login">
@@ -49,7 +49,7 @@ function Navbar() {
       {isMenuOpen && (
         <div className="mobile-menu">
           <Link to="/">Beranda</Link>
-          <a href="#layanan">Layanan</a>
+          <Link to="/services">Layanan</Link>
           <Link to="/about">Tentang</Link>
           <Link to="/reviews">Ulasan</Link>
           <Link to="/login">

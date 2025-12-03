@@ -108,7 +108,7 @@ function Signup() {
                         </div>
 
                         <button type="submit" className="auth-button">
-                            Daftar
+                            {loading ? 'Sedang mendaftar...' : 'Daftar'}
                         </button>
                     </form>
 

@@ -160,7 +160,6 @@ function Reviews() {
         </div>
       </div>
 
-      {/* Reviews List */}
       <div className="reviews-container">
         <div className="reviews-list">
           {loading ? (

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import { loginUser, registerUser } from "../services/api";
 import '../styles/Login.css';
 
 function Signup() {
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -10,8 +13,9 @@ function Signup() {
         email: '',
         password: ''
     });
+    const [loading, setLoading] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.proveDefault();
 
         const newErrors = {
@@ -35,7 +39,18 @@ function Signup() {
         setErrors(newErrors);
 
         if (!newErrors.username && !newErrors.email && !newErrors.password) {
-            alert('Pendaftaran berhasil');
+            setLoading(true);
+
+            const result = await registerUser({ username, email, password });
+
+            setLoading(false);
+
+            if (result.success) {
+                alert('Pendaftaran berhasil! Mohon login.');
+                navigate('/login');
+            } else {
+                alert(result.error);
+            }
         }
     };
 

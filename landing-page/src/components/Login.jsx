@@ -1,15 +1,19 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import { loginUser } from "../services/api";
 import '../styles/Login.css';
 
 function Login() {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({
         email: '',
         password: ''
     });
+    const [loading, setLoading] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         const newErrors = {
@@ -28,7 +32,18 @@ function Login() {
         setErrors(newErrors);
 
         if (!newErrors.email && !newErrors.password) {
-            alert('Login berhasil');
+            setLoading(true);
+
+            const result = await loginUser({ email, password});
+
+            setLoading(false);
+
+            if (result.success) {
+                alert('Login berhasil');
+                navigate('/');
+            } else {
+                alert(result.error);
+            }
         }
     };
 

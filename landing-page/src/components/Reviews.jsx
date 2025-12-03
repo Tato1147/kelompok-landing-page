@@ -46,7 +46,7 @@ function Reviews() {
     } else {
       console.error('Failed to fetch reviews:', result.error);
       if (result.error.includes('token') || result.error.includes('authorization')) {
-        alert('Please log in to view reviews');
+        alert('Mohon log in untuk melihat ulasan');
       }
     }
     setLoading(false);

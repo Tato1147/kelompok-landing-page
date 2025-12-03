@@ -1,5 +1,3 @@
-const API_BASE_URL = 'http://localhost:4000/api';
-
 const getAuthToken = () => {
   return localStorage.getItem('token');
 };

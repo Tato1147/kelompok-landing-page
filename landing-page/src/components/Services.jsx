@@ -29,6 +29,7 @@ function Services() {
       emoji: '💰',
       color: '#059669',
       description: 'Sistem transparansi keuangan desa yang memungkinkan warga memantau anggaran dan realisasi dana desa secara real-time.',
+      link: 'https://prpl-q5jk.vercel.app/',
       features: [
         'Laporan anggaran pendapatan dan belanja desa (APBDes)',
         'Realisasi penggunaan dana desa',
@@ -72,6 +73,7 @@ function Services() {
       emoji: '🏪',
       color: '#7c3aed',
       description: 'Platform untuk mempromosikan dan mendukung perkembangan Usaha Mikro Kecil Menengah di desa.',
+      link: 'https://huggingface.co/spaces/madrazaldi/UMKM-APP',
       features: [
         'Katalog produk UMKM lokal',
         'Profil pengusaha dan wirausaha desa',
@@ -116,6 +118,7 @@ function Services() {
       emoji: '📅',
       color: '#0891b2',
       description: 'Pusat informasi untuk semua kegiatan, acara, dan pengumuman penting di desa.',
+      link: 'https://acara-desa.up.railway.app/',
       features: [
         'Kalender acara dan kegiatan desa',
         'Pengumuman penting dari pemerintah desa',

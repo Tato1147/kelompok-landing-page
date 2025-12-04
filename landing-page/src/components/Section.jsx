@@ -3,6 +3,16 @@ import '../styles/Section.css';
 
 function Section({ section, index, onNavigate }) {
   const isEven = index % 2 === 0;
+
+  const isExternalLink = section.link.startsWith('http');
+
+  const handleClick = () => {
+    if (isExternalLink) {
+      window.open(section.link, '_blank', 'noopener, noreferrer');
+    } else {
+      onNavigate(section.link);
+    }
+  };
   
   return (
     <div className={`section section-${section.bgColor}`}>
@@ -17,7 +27,7 @@ function Section({ section, index, onNavigate }) {
                 </div>
                 <p className="section-description">{section.description}</p>
                 <button 
-                  onClick={() => onNavigate(section.link)} 
+                  onClick={handleClick} 
                   className="section-button"
                 >
                   Selengkapnya
@@ -44,7 +54,7 @@ function Section({ section, index, onNavigate }) {
                 </div>
                 <p className="section-description">{section.description}</p>
                 <button 
-                  onClick={() => onNavigate(section.link)} 
+                  onClick={handleClick} 
                   className="section-button"
                 >
                   Selengkapnya

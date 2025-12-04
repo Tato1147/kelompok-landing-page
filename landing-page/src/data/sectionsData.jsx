@@ -3,7 +3,7 @@ export const sectionsData = [
     id: 'financial',
     title: 'Finansial',
     description: 'Transparansi keuangan desa untuk membangun kepercayaan. Lihat laporan anggaran, realisasi, dan penggunaan dana desa secara real-time.',
-    link: '/finansial',
+    link: 'https://prpl-q5jk.vercel.app/',
     bgColor: 'white',
     textColor: 'dark'
   },
@@ -19,7 +19,7 @@ export const sectionsData = [
     id: 'umkm',
     title: 'UMKM Desa',
     description: 'Dukung produk lokal dan wirausaha. Jelajahi berbagai UMKM di desa kami, dari kuliner hingga kerajinan tangan yang unik dan berkualitas.',
-    link: '/umkm',
+    link: 'https://huggingface.co/spaces/madrazaldi/UMKM-APP',
     bgColor: 'white',
     textColor: 'dark'
   },
@@ -35,7 +35,7 @@ export const sectionsData = [
     id: 'events',
     title: 'Acara Desa',
     description: 'Ikuti kegiatan dan acara terbaru di desa. Dari gotong royong, perayaan tradisional, hingga pengumuman penting dari pemerintah desa.',
-    link: '/acara-desa',
+    link: 'https://acara-desa.up.railway.app/',
     bgColor: 'white',
     textColor: 'dark'
   }

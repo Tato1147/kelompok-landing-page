@@ -11,7 +11,7 @@ export const sectionsData = [
     id: 'infrastructure',
     title: 'Infrastruktur',
     description: 'Pantau perkembangan infrastruktur desa dan kelola hubungan dengan stakeholder. Lihat proyek pembangunan jalan, jembatan, fasilitas umum, dan progres pembangunan desa.',
-    link: '/infrastruktur',
+    link: 'https://newtest-qa2f0qbv4-artymates-projects.vercel.app/',
     bgColor: 'blue',
     textColor: 'white'
   },
@@ -27,7 +27,7 @@ export const sectionsData = [
     id: 'education',
     title: 'Edukasi',
     description: 'Akses informasi pendidikan dan pelatihan. Program bimbingan belajar, kursus keterampilan, dan berbagai kegiatan edukatif untuk semua usia.',
-    link: '/edukasi',
+    link: 'https://eduvillage.vercel.app/register',
     bgColor: 'blue',
     textColor: 'white'
   },

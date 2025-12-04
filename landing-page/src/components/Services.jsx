@@ -51,6 +51,7 @@ function Services() {
       emoji: '🏗️',
       color: '#dc2626',
       description: 'Platform untuk memantau perkembangan pembangunan infrastruktur desa dan mengelola hubungan dengan stakeholder.',
+      link: 'https://newtest-qa2f0qbv4-artymates-projects.vercel.app/',
       features: [
         'Daftar proyek pembangunan yang sedang berjalan',
         'Status dan progres pembangunan real-time',
@@ -96,6 +97,7 @@ function Services() {
       emoji: '📚',
       color: '#ea580c',
       description: 'Platform pembelajaran dan pelatihan untuk meningkatkan keterampilan dan pengetahuan warga desa.',
+      link: 'https://eduvillage.vercel.app/register',
       features: [
         'Program bimbingan belajar untuk pelajar',
         'Kursus keterampilan dan pelatihan vokasi',
@@ -136,6 +138,14 @@ function Services() {
       ]
     }
   ];
+
+  const handleAccessApp = (link) => {
+    if (link.startsWith('http')) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    } else {
+      window.location.href = link;
+    }
+  };
 
   return (
     <div className="services-page">
@@ -178,7 +188,7 @@ function Services() {
                   </ul>
                 </div>
 
-                <button className="service-button" style={{ backgroundColor: service.color }}>
+                <button className="service-button" style={{ backgroundColor: service.color }} onClick={() => handleAccessApp(service.link)}>
                   Akses Aplikasi
                 </button>
               </div>
@@ -190,7 +200,7 @@ function Services() {
       <div className="services-cta">
         <div className="cta-content">
           <h2>Siap Menggunakan Layanan Kami?</h2>
-          <p>Daftar sekarang dan nikmati kemudahan akses ke semua layanan digital Desa Sukamaju</p>
+          <p>Daftar sekarang dan nikmati kemudahan akses ke semua layanan digital PRPL Desa</p>
           <div className="cta-buttons">
             <a href="/signup" className="cta-button primary">Daftar Sekarang</a>
             <a href="/about" className="cta-button secondary">Pelajari Lebih Lanjut</a>

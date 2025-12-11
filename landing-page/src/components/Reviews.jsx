@@ -35,13 +35,13 @@ function Reviews() {
     
     if (result.success) {
       const transformedReviews = result.data.map(item => ({
-        id: item._id,
-        app: item.type,
-        userName: item.user?.username || 'Anonymous User',
-        rating: 5,
-        text: item.message,
-        date: new Date(item.createdAt).toISOString().split('T')[0]
-      }));
+    id: item._id,
+    app: item.type,
+    userName: item.user?.username || 'Anonymous User',
+    rating: item.rating,
+    text: item.message,
+    date: new Date(item.createdAt).toISOString().split('T')[0]
+}));
       setReviews(transformedReviews);
     } else {
       console.error('Failed to fetch reviews:', result.error);
@@ -69,9 +69,11 @@ function Reviews() {
     setSubmitting(true);
 
     const result = await submitFeedback({
-      type: selectedApp,
-      message: reviewText
-    });
+    type: selectedApp,
+    message: reviewText,
+    rating: rating
+});
+
 
     setSubmitting(false);
 

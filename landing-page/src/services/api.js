@@ -1,4 +1,6 @@
-const API_BASE_URL = 'http://localhost:4000/api'
+// src/services/api.js
+const API_BASE_URL = 'https://anchor-backend-production.up.railway.app/api';
+
 
 const getAuthToken = () => {
   return localStorage.getItem('token');

@@ -11,7 +11,7 @@ export const sectionsData = [
     id: 'infrastructure',
     title: 'Infrastruktur',
     description: 'Pantau perkembangan infrastruktur desa dan kelola hubungan dengan stakeholder. Lihat proyek pembangunan jalan, jembatan, fasilitas umum, dan progres pembangunan desa.',
-    link: 'https://newtest-qa2f0qbv4-artymates-projects.vercel.app/',
+    link: 'https://newtest-taupe.vercel.app/login',
     bgColor: 'blue',
     textColor: 'white'
   },

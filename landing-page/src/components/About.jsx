@@ -102,30 +102,7 @@ function About() {
               </div>
             </div>
           </section>
-
-          <section className="about-section contact-section">
-            <div className="section-icon">📧</div>
-            <h2>Hubungi Kami</h2>
-            <p>
-              Kami selalu terbuka untuk saran, kritik, dan masukan dari Anda. 
-              Mari bersama-sama membangun Desa Sukamaju yang lebih baik!
-            </p>
-            <div className="contact-info">
-              <div className="contact-item">
-                <span>📍</span>
-                <p>Desa Sukamaju, Kecamatan Sleman, Yogyakarta</p>
-              </div>
-              <div className="contact-item">
-                <span>📞</span>
-                <p>+62 274 XXX XXXX</p>
-              </div>
-              <div className="contact-item">
-                <span>✉️</span>
-                <p>info@desasukamaju.id</p>
-              </div>
-            </div>
-          </section>
-
+          
         </div>
       </div>
     </div>
